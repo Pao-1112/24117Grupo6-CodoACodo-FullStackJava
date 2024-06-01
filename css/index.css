@@ -1,0 +1,79 @@
+
+/*para que se vea igual en cualquier navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /*background-image:url("../Img/Purple\ Flower\ Aesthetic\ Desktop\ Wallpaper.png");*/
+
+    body {
+        background: linear-gradient(rgb(0, 0, 0),rgb(186, 188, 195));
+        height: 100%;
+        font-family: "Open Sans", sans-serif ;
+    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.form-login {
+    width:400px ;
+    height: 360px;
+    background: rgb(89, 124, 252);
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    box-shadow: 8px 13px 30px rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-top: 4px solid rgb(43, 37, 91);
+}
+.form-login h2 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+}
+.controls {
+    width: 100%;
+    border: 2px solid rgb(13, 41, 120);
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background-color:aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.controls:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+.buttons {
+    width: 100%;
+    height: 40px;
+    background:rgb(41, 27, 148) ;
+    border: none;
+    color:aliceblue;
+    margin-bottom: 16px;
+}
+.buttons:hover{
+    border: 1px solid aliceblue;
+}
+
+.form-login p {
+    height: 40px;
+    text-align: center;
+   
+}
+.form-login a {
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-login a:hover {
+    text-decoration: underline;
+}

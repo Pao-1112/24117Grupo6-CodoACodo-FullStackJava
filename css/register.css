@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    /*background-image:url("../Img/Purple\ Flower\ Aesthetic\ Desktop\ Wallpaper.png");*/
+
+body {
+    background: linear-gradient(rgb(0, 0, 0),rgb(186, 188, 195));
+    height: 100%;
+    font-family: "Open Sans", sans-serif ;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+header{
+    padding: 10px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    color:aliceblue !important;
+}
+
+header nav a{
+    color:antiquewhite;
+    text-decoration: none;
+    margin-right: 20px;
+}
+/*cambio de color navegador*/
+header nav a:hover,
+header nav a.active{
+    color:rgb(89, 124, 253);
+}
+form{
+    border: 0.2rem solid rgb(89, 124, 252);
+    padding: 20px;
+    background: rgb(89, 124, 252);
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    box-shadow: 8px 13px 30px rgb(0, 0, 0);
+    padding: 20px 30px;
+    border-top: 4px solid rgb(43, 37, 91);
+}
+.title-survey{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-input-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+button{
+    background:rgb(41, 27, 148) !important ;
+    color:aliceblue;
+}
+.button1, .button2 {
+    margin-bottom: 10px;
+}
+
+section {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+.forms {
+	display: grid;
+    grid-template-columns: 1fr;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+}
+
+.forms__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.forms__group-input {
+	position: relative;
+}
+
+.forms__input {
+	width: 100%;
+	background: #fff;
+	border-radius: 2px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+    border: 2px solid rgb(13, 41, 120);
+}
+
+.forms__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.forms__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.forms__input-error-asset {
+	display: block;
+}
+
+.forms__validation-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.forms__group-btn-send {
+	grid-column: span 1;
+}
+.forms__message {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+.forms__message-asset {
+	display: block;
+}
+
+.forms__message, p {
+	margin: 0;
+}
+a {
+    text-decoration: none !important;
+    color: aliceblue !important;
+}
+.forms__group-btn-send {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.forms__btn {
+	height: 45px;
+	line-height: 45px;
+	width: 30%;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+}
+.forms__btn:hover{
+    border: 1px solid aliceblue;
+}
+
+.forms__message-success {
+	font-size: 14px;
+	color: #020226;
+	display: none;
+}
+
+.forms__message-success-asset {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.forms__group-correct .forms__validation-estado {
+	color:  #020226;
+	opacity: 1;
+}
+
+.forms__group-incorrect .forms__label {
+	color: #bb2929;
+}
+
+.forms__group-incorrect .forms__validation-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.forms__group-incorrect .forms__input {
+	border: 3px solid #bb2929;
+}
+.forms__group-incorrect .forms__message1 {
+	border: 3px solid #bb2929;
+}
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.forms {
+		grid-template-columns: 1fr;
+	}
+
+	.forms__group-btn-send {
+		grid-column: 1;
+	}
+
+	.forms__btn {
+		width: 100%;
+	}
+}

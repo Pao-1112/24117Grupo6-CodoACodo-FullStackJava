@@ -1,0 +1,183 @@
+:root{
+    --blue: rgb(89, 124, 252);
+    --Fondo:rgb(0, 0, 0);
+
+}
+/*para que se vea igual en cualquier navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(0, 0, 0) !important; 
+    font-family: "Open Sans", sans-serif ;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+header{
+    padding: 10px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+}
+header nav a{
+    color:antiquewhite;
+    text-decoration: none;
+    margin-right: 20px;
+}
+/*cambio de color navegador*/
+header nav a:hover,
+header nav a.active{
+    color:rgb(89, 124, 253);
+}
+
+/*-------Pelicula Principal------*/
+.main-movie{
+    font-size: 16px;
+    min-height: 40.62em;/*alturaminima*/
+    color:antiquewhite;
+    background: linear-gradient(rgba(255, 253, 253, 0.986)0%,rgb(255, 255, 255)100%);
+    background: center center;
+    background-size: cover;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    display: inline;
+}
+.main-movie {
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+.main-movie .title{
+    font-size: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.main-movie .description{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+.button-info, .button-see{
+    background-color: rgb(42, 162, 236);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color:antiquewhite;
+    margin-right: 1.2em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    margin-bottom: 10px;
+}
+.button-info:hover{
+   background-color: white;
+   color:black;
+}
+.button-see:hover{
+    background-color: white;
+    color:black;
+ }
+svg {
+    margin-right: 1.25em;
+}
+.title, .description, p{
+    color: azure;
+    text-align:left;
+    border-color: black;
+}
+/*---------secciones  del acordion------------------*/
+.accordion-body{
+    background-color: black !important;
+    color: antiquewhite;
+}
+.accordion-item{
+    background-color: black !important;
+}
+.accordion-button{
+    background-color: black !important;
+    color: antiquewhite !important;
+}
+.accordion-item-miLista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-img{
+    display: flex;
+    justify-content: center;
+}
+.img-box{
+    width: 50%;
+    height: 60%;
+    padding: 10px;
+}
+.title-file{
+    margin-bottom: 50px !important;
+}
+.img-files{
+    padding: 20px !important;
+    width: 30% !important;
+
+}
+.box-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.files-button{
+    display: flex;
+    justify-content: center;
+}
+
+/*------------footer------------*/
+hr{
+    color: white !important;
+}
+.footer {
+    text-align: center;
+    
+  }
+.container-footer{
+    color: antiquewhite;
+}
+.copyright-container{
+    font-size: 10px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.container-redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width:100vw;
+}
+/*-----------------Media Query----------------*/
+@media screen and (max-width:800px){
+    .logo{
+        margin-bottom: 10px;
+    }
+    header .container, .files, .box-container1, .box-container-2{
+        flex-direction: column;
+        text-align: center;
+    }
+}
