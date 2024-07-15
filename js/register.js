@@ -2,7 +2,10 @@ const forms = document.getElementById('forms');
 const inputs = document.querySelectorAll('#forms input');
 
 const expressions = {
-	name: /^[a-zA-Z0-9\_\-]{4,16}$/,
+	name: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+	surname: /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+	DNI: /^\d{7,8}$/,
+	user:/^[a-zA-Z0-9\_\-]{4,16}$/,
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	phone: /^\d{7,14}$/, // 7 a 14 numeros.
     password: /^.{4,12}$/
@@ -10,6 +13,9 @@ const expressions = {
 
 const fields = {
 	name: false,
+	surname: false,
+	DNI: false,
+	user: false,
 	email: false,
 	phone: false,
     password: false
@@ -19,6 +25,18 @@ const validateForm = (e) => {
 	switch (e.target.name) {
 		case "name":
 			validateField(expressions.name, e.target, 'name');
+			let name1=localStorage.setItem(expressions.name);
+		break;
+		case "surname":
+			validateField(expressions.surname, e.target, 'surname');
+			let surname1=localStorage.setItem(expressions.surname);
+		break;
+		case "DNI":
+			validateField(expressions.phone, e.target, 'DNI');
+		break;
+		case "user":
+			validateField(expressions.user, e.target, 'user');
+			let user1=localStorage.setItem(expressions.user);
 		break;
 		case "email":
 			validateField(expressions.email, e.target, 'email');
@@ -28,6 +46,7 @@ const validateForm = (e) => {
 		break;
         case "password":
 			validateField(expressions.password, e.target, 'password');
+			let password1=localStorage.setItem(expressions.password);
 		break;
 	}
 }
@@ -57,7 +76,7 @@ inputs.forEach((input) => {
 forms.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	if(fields.name && fields.email && fields.phone && fields.password){
+	if(fields.name && fields.surname && fields.DNI && fields.user && fields.email && fields.phone && fields.password){
         
 		forms.reset();
         document.getElementById('forms__message').classList.remove('forms__message-asset');

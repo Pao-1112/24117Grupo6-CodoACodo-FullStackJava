@@ -29,6 +29,7 @@
                     <a href="#masVistas">Más vistas</a>
                     <a href="#miLista">Mi lista</a>
                     <a href="#peliculas">Películas</a>
+                    <a href="baseDeDatos.html">Base De Datos</a>
                     <a href="survey.html">Contactanos</a>
                     <a href="index.html">Salir</a>
                 </nav>
@@ -228,8 +229,8 @@
                       </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse accordion-item-miLista miLista1" data-bs-parent="#accordionFlushExample">
+                      <div class= "moviesApi" id="movies"></div>
                       <!--Agrego películas con una api-->
-                      <button class="button-info" id="buttonMiLista" role="button">Ver</button>
                     </div>
                   </div>
                   <!--Lista de películas de la aplicación-->
@@ -469,9 +470,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
         <script src="../js/files.js"></script>
-        <script src="apiVue.js"></script>
-        <script>
-          AOS.init();
-      </script>
     </body>
 </html>

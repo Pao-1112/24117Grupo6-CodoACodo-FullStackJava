@@ -171,6 +171,24 @@ hr{
     height: 10vh;
     width:100vw;
 }
+/*-----------------Acordion Con Api--------------*/
+.movie {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.moviesApi img{
+    padding: 20px !important;
+} 
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color:aliceblue;
+    padding: 25px;
+    margin-right: 10px;
+}
 /*-----------------Media Query----------------*/
 @media screen and (max-width:800px){
     .logo{

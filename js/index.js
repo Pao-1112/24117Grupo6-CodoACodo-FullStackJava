@@ -2,12 +2,16 @@
 function loguin(){
 	let user=document.getElementById("user").value;
 	let password=document.getElementById("password").value;
-	if (user=="" & password==""){
+	if (user=="usuario" & password=="12345"){
         window.location="files.html";
 	}
+	//if(){
+		//window.location="files.html";
+	//}
 	else{
-		window.location="files.html";
-		//alert("¡Usuario y/o Password incorrecto!")
+		
+		alert("¡Usuario y/o Password incorrecto!, utiliza user= usuario y password=12345");
+		
 	}
 	
 }

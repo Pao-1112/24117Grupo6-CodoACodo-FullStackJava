@@ -1,0 +1,93 @@
+
+/*para que se vea igual en cualquier navegador*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(0, 0, 0); 
+    font-family: "Open Sans", sans-serif ;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+header{
+    padding: 10px 0;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+}
+header nav a{
+    color:antiquewhite;
+    text-decoration: none;
+    margin-right: 20px;
+}
+/*cambio de color navegador*/
+header nav a:hover,
+header nav a.active{
+    color:rgb(89, 124, 253);
+}
+.title-survey{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+}
+
+/*ESTILOS PARA MAIN ESCRITORIO*/
+.main, .sectionFormulario
+    {
+        color:white;
+        width: 60%; 
+        margin: auto;
+        border-color: blue;
+    }
+    .sectionFormularioTabla
+    {
+        color:white;
+        width: 60%; 
+        margin: auto; 
+        border: 1px solid blue;
+    }
+
+    th, td {
+        border: 1px solid #9f3647;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #9f3647; /* Fondo negro para resaltar el texto blanco */
+        color: white ; /* Texto en blanco */
+        text-align: center;
+    }
+
+    td {
+        color: white; /* Texto en blanco */
+        text-align: center;
+    }
+
+    .btn .btn-danger .btn-success{
+        background-color: rgb(42, 162, 236)!important;
+        border: none;
+        border-radius: 0.31em;
+        padding: 0.93em 1.87em;
+        color:antiquewhite;
+        margin-right: 1.2em;
+        cursor: pointer;
+        transition: .3s ease all;
+        font-size: 1.12em;
+        margin-bottom: 10px;
+    }

@@ -23,12 +23,41 @@
     <section>
         <h2 class="title-survey">Registrate</h2>
         <div id="survey">       
-            <form class="forms" id="forms">
-                <!-- Grupo: Usuario -->
+            <form class="forms" id="forms" action="" method="post">
+                <!-- Grupo: Nombre -->
                 <div class="forms__group" id="group__name">
-                    <label for="name" class="forms__label">Usuario</label>
+                    <label for="name" class="forms__label">Nombre</label>
                     <div class="forms__group-input">
-                        <input type="text" class="forms__input" name="name" id="name" placeholder="Maria_Perez11">
+                        <input type="text" class="forms__input" name="name" id="name" placeholder="Maria Perez">
+                        <i class="forms__validation-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="forms__input-error">El campo debe contener el nombre del usuario</p>
+                </div>
+                <!-- Grupo: Apellido -->
+                <div class="forms__group" id="group__surname">
+                    <label for="surname" class="forms__label">Apellido</label>
+                    <div class="forms__group-input">
+                        <input type="text" class="forms__input" name="surname" id="surname" placeholder="Maria Perez">
+                        <i class="forms__validation-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="forms__input-error">El campo debe contener el apellido del usuario</p>
+                </div>
+
+                <!-- DNI -->
+                <div class="forms__group" id="group__DNI">
+                    <label for="DNI" class="forms__label">DNI</label>
+                    <div class="forms__group-input">
+                        <input type="text" class="forms__input" name="DNI" id="DNI" placeholder="21333440">
+                        <i class="forms__validation-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="forms__input-error">El DNI solo puede contener numeros de un máximo de 8 dígitos, sin puntos.</p>
+                </div>
+
+                <!-- Grupo: Usuario -->
+                <div class="forms__group" id="group__user">
+                    <label for="user" class="forms__label">Usuario</label>
+                    <div class="forms__group-input">
+                        <input type="text" class="forms__input" name="user" id="user" placeholder="Maria_Perez11">
                         <i class="forms__validation-estado fas fa-times-circle"></i>
                     </div>
                     <p class="forms__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
